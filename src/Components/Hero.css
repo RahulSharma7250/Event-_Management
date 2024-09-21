@@ -1,0 +1,112 @@
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    /* background: linear-gradient(180deg, #005A9C, #005A9C, #000000);  */
+    overflow-x: hidden;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+
+.hero-button {
+    background-color: #0074CC; /* Button color to complement the body background */
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #004080; 
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center Image */
+.center-image {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* Ensure the center image is on top */
+}
+
+/* Corner Images */
+.corner-image {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 0; /* Ensure corner images are below the center image */
+}
+
+/* Top-left corner */
+.top-left {
+    top: 10%; /* Moved farther from the center */
+    left: 14%; /* Moved farther from the center */
+    transform: translate(-50%, -50%);
+}
+
+/* Top-right corner */
+.top-right {
+    top: 10%; /* Moved farther from the center */
+    right: 14%; /* Moved farther from the center */
+    transform: translate(50%, -50%);
+}
+
+/* Bottom-left corner */
+.bottom-left {
+    bottom: 10%; /* Moved farther from the center */
+    left: 14%; /* Moved farther from the center */
+    transform: translate(-50%, 50%);
+}
+
+/* Bottom-right corner */
+.bottom-right {
+    bottom: 10%; /* Moved farther from the center */
+    right: 14%; /* Moved farther from the center */
+    transform: translate(50%, 50%);
+}

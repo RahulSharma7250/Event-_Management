@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+  }
+  
+  body {
+   
+    background: linear-gradient(180deg, #005A9C, #0d3b66, #000000);
+
+    /* Three-color gradient */
+    background-size: cover; /* Ensures the gradient covers the entire body */
+    font-family: Arial, sans-serif; /* Optional for text styling */
+}

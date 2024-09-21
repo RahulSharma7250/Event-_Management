@@ -1,0 +1,73 @@
+/* Services Section Styles */
+.services {
+    padding: 50px 20px;
+    /* background-color: #0d3b66;  */
+}
+
+.services__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services__container h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Service Card Styles */
+.service-card {
+    flex: 1 1 250px;
+    background-color:rgb(0 147 255 / 15%); 
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(2 8 13 / 25%); 
+}
+
+/* Service Card Icon */
+.service-card__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Service Card Title */
+.service-card__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .service-card__title {
+    transform: translateY(-5px); 
+}
+
+
+.service-card__description {
+    font-size: 16px;
+    color: #d9e4f5; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .service-card__description {
+    color: #ffffff; 
+    transform: translateY(-5px); 
+}

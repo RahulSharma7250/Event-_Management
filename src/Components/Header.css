@@ -1,57 +1,131 @@
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1a1a1a;
+    /* background-color: #004170; */
     color: #f0f0f0;
-  }
-  
-  .logo h1 {
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
     font-size: 24px;
     color: #f0f0f0;
-  }
-  
-  .nav ul {
+}
+
+.nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* Add a gap between nav items */
+}
+
+.nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-  }
-  
-  .nav ul li a {
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Gap between each nav item */
+}
+
+.nav ul li {
+    display: flex;
+}
+
+.nav ul li a {
     text-decoration: none;
     color: #f0f0f0;
     font-size: 16px;
     transition: color 0.3s ease;
-  }
-  
-  .nav ul li a:hover {
-    color: #00d1b2;
-  }
-  
-  .cta .cta-button {
-    background-color: #00d1b2;
-    color: #1a1a1a;
+}
+
+.nav ul li a:hover {
+    color: #004080;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add a gap between the nav list and the CTA button */
+}
+
+.cta .cta-button {
+    background-color:  #0074CC;
+    color:  #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
-  
-  .cta .cta-button:hover {
-    background-color: #00a58f;
-  }
-  
-  .social-media a {
-    margin-left: 20px;
-    color: #f0f0f0;
-    font-size: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-media a:hover {
-    color: #00d1b2;
-  }
-  
+}
+
+.cta .cta-button:hover {
+    background-color: #004080;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav ul li {
+        width: 100%;
+    }
+
+    .nav ul li a {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cta {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cta .cta-button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Extra Small Screens (like mobile phones) */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .cta .cta-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

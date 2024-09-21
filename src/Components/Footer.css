@@ -1,0 +1,106 @@
+/* Footer.css */
+.footer {
+    padding: 40px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__column {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer__column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold color for headings */
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__links li {
+    margin-bottom: 10px;
+}
+
+.footer__links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer__links li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.footer__socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__social-link {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer__social-link:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.footer__column p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.footer__button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffd700; /* Gold button */
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer__button:hover {
+    background-color: #ff6f61; /* Primary color on hover */
+    color: #fff;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
